@@ -1,6 +1,5 @@
 // App.tsx
-import { Routes, Route, Link } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home"; // Componente de inicio
 import Champions from "./pages/Champions"; // Asegúrate de tener este componente
 import { useLeague } from "./context/LeagueContext";
@@ -9,13 +8,11 @@ import { ProtectedRoute } from "./components/ProtectedRoute";
 import Admin from "./pages/admin";
 
 function App() {
-  const { state } = useLeague();
-  const { teams, matches, news } = state;
+  useLeague();
 
   return (
     <div className="min-h-screen bg-gray-100">
       <AuthProvider>
-        <Navbar />
 
         <Routes>
           <Route path="/" element={<Home />} />

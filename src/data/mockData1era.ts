@@ -1,6 +1,6 @@
 // mockData.ts
-import { format, addDays } from 'date-fns';
-import { Team, Player, Match, News, Position } from './types';
+import { format } from 'date-fns';
+import { Team, Player, Match, News } from '../types/index';
 
 // Utilidades
 export const generateId = (prefix: string, currentItems: { id: string }[]): string => {
@@ -51,7 +51,8 @@ export const teams: Team[] = [
     points: 23,
     stadium: 'Estadio Manuel Seoane',
     founded: '1918',
-    logo: '/logos/gimnasia.png'
+    logo: '/logos/gimnasia.png',
+    goalDifference: 0
   },
   {
     id: '2',
@@ -62,7 +63,11 @@ export const teams: Team[] = [
     lost: 1,
     goalsFor: 18,
     goalsAgainst: 7,
-    points: 21
+    points: 21,
+    stadium: 'Estadio Manuel Seoane',
+    founded: '1918',
+    logo: '/logos/gimnasia.png',
+    goalDifference: 0
   },
   {
     id: '3',
@@ -73,7 +78,11 @@ export const teams: Team[] = [
     lost: 3,
     goalsFor: 15,
     goalsAgainst: 10,
-    points: 19
+    points: 19,
+    stadium: 'Estadio Manuel Seoane',
+    founded: '1918',
+    logo: '/logos/gimnasia.png',
+    goalDifference: 0
   },
   {
     id: '4',
@@ -84,7 +93,11 @@ export const teams: Team[] = [
     lost: 3,
     goalsFor: 17,
     goalsAgainst: 12,
-    points: 17
+    points: 17,
+    stadium: 'Estadio Manuel Seoane',
+    founded: '1918',
+    logo: '/logos/gimnasia.png',
+    goalDifference: 0
   },
   {
     id: '5',
@@ -95,7 +108,11 @@ export const teams: Team[] = [
     lost: 2,
     goalsFor: 14,
     goalsAgainst: 10,
-    points: 16
+    points: 16,
+    stadium: 'Estadio Manuel Seoane',
+    founded: '1918',
+    logo: '/logos/gimnasia.png',
+    goalDifference: 0
   },
   {
     id: '6',
@@ -106,7 +123,11 @@ export const teams: Team[] = [
     lost: 4,
     goalsFor: 11,
     goalsAgainst: 13,
-    points: 12
+    points: 12,
+    stadium: 'Estadio Manuel Seoane',
+    founded: '1918',
+    logo: '/logos/gimnasia.png',
+    goalDifference: 0
   },
   {
     id: '7',
@@ -117,7 +138,11 @@ export const teams: Team[] = [
     lost: 6,
     goalsFor: 8,
     goalsAgainst: 20,
-    points: 8
+    points: 8,
+    stadium: 'Estadio Manuel Seoane',
+    founded: '1918',
+    logo: '/logos/gimnasia.png',
+    goalDifference: 0
   },
   {
     id: '8',
@@ -128,7 +153,11 @@ export const teams: Team[] = [
     lost: 5,
     goalsFor: 10,
     goalsAgainst: 15,
-    points: 13
+    points: 13,
+    stadium: 'Estadio Manuel Seoane',
+    founded: '1918',
+    logo: '/logos/gimnasia.png',
+    goalDifference: 0
   },
   {
     id: '9',
@@ -139,7 +168,11 @@ export const teams: Team[] = [
     lost: 6,
     goalsFor: 7,
     goalsAgainst: 18,
-    points: 6
+    points: 6,
+    stadium: 'Estadio Manuel Seoane',
+    founded: '1918',
+    logo: '/logos/gimnasia.png',
+    goalDifference: 0
   }
   ,{
     id: '10',
@@ -150,7 +183,11 @@ export const teams: Team[] = [
     lost: 2,
     goalsFor: 16,
     goalsAgainst: 12,
-    points: 18
+    points: 18,
+    stadium: 'Estadio Manuel Seoane',
+    founded: '1918',
+    logo: '/logos/gimnasia.png',
+    goalDifference: 0
   }
   ];
   
@@ -197,7 +234,7 @@ export const teams: Team[] = [
     assists: 5,
     yellowCards: 3,
     redCards: 0,
-    image: '/players/player-1.jpg',
+    image: '/logos/Club Gimnasia y Esgrima.png',
     nationality: 'Argentina',
     age: 27,
     },

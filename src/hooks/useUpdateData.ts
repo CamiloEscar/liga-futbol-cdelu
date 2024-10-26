@@ -3,14 +3,14 @@ import { useState } from 'react'
 interface UpdateDataResult {
   isLoading: boolean
   error: string | null
-  updateData: (data: any, dataType: string) => Promise<void>
+  updateData: (data: unknown, dataType: string) => Promise<void>
 }
 
 export function useUpdateData(): UpdateDataResult {
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
-  const updateData = async (data: any, dataType: string) => {
+  const updateData = async (data: unknown, dataType: string) => {
     setIsLoading(true)
     setError(null)
 

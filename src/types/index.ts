@@ -12,6 +12,7 @@ export interface Team {
   lost: number;
   goalsFor: number;
   goalsAgainst: number;
+  goalDifference: number;
   points: number;
   stadium: string;
   founded?: string;

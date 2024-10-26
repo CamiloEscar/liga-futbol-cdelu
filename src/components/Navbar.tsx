@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Facebook, Instagram, Menu, Twitter, X, Youtube } from "lucide-react"
+import { Facebook, Instagram, Menu, Youtube } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
@@ -11,9 +11,9 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import LoginModal from "./LoginModal"
 
 const navItems = [
-  { href: "#standings", text: "Posiciones" },
-  { href: "#fixtures", text: "Fixture" },
   { href: "#teams", text: "Equipos" },
+  { href: "#fixtures", text: "Fixture" },
+  { href: "#standings", text: "Posiciones" },
   { href: "#news", text: "Noticias" },
 ]
 
@@ -32,18 +32,17 @@ export default function Navbar() {
       <div className="container">
         <div className="flex h-14 items-center justify-between py-2">
           <div className="flex items-center space-x-4 text-sm text-muted-foreground">
-            <a href="tel:+1234567890" className="hover:text-foreground">
-              +123 456 7890
+            <a href="tel:+3442232323" className="hover:text-foreground">
+              +3442232323
             </a>
-            <a href="mailto:info@localleague.com" className="hover:text-foreground">
-              info@localleague.com
+            <a href="mailto:info@ligacdelu.com" className="hover:text-foreground">
+              info@ligacdelu.com
             </a>
           </div>
           <div className="flex items-center space-x-4">
-            <SocialLink href="#" icon={<Facebook className="h-4 w-4" />} label="Facebook" />
-            <SocialLink href="#" icon={<Twitter className="h-4 w-4" />} label="Twitter" />
-            <SocialLink href="#" icon={<Instagram className="h-4 w-4" />} label="Instagram" />
-            <SocialLink href="#" icon={<Youtube className="h-4 w-4" />} label="YouTube" />
+            <SocialLink href="https://www.facebook.com/ligadefutbolcdelu.com.ar/?_rdr" icon={<Facebook className="h-4 w-4" />} label="Facebook" />
+            <SocialLink href="https://www.instagram.com/ligadefutbolcdelu.oficial/?hl=es" icon={<Instagram className="h-4 w-4" />} label="Instagram" />
+            <SocialLink href="https://www.youtube.com" icon={<Youtube className="h-4 w-4" />} label="YouTube" />
           </div>
         </div>
       </div>
